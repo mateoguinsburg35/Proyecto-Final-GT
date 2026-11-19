@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EstudIA</title>
+<link rel="icon" type="image/png" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div class="app">
+  <aside class="menu">
+    <button class="marca" data-accion="ir" data-vista="presentacion" aria-label="Ir a la presentación de EstudIA">EstudIA</button>
+    <nav aria-label="Secciones">
+      <button class="solo-movil" data-accion="ir" data-vista="presentacion">EstudIA</button>
+      <button data-accion="ir" data-vista="inicio">Panel diario</button>
+      <button data-accion="ir" data-vista="calendario">Calendario</button>
+      <button data-accion="ir" data-vista="tareas">Tareas</button>
+      <button data-accion="ir" data-vista="examenes">Exámenes</button>
+      <button data-accion="ir" data-vista="materias">Materias</button>
+      <button data-accion="ir" data-vista="horario">Horario</button>
+      <button data-accion="ir" data-vista="enfoque">Enfoque</button>
+      <button data-accion="ir" data-vista="datos">Datos</button>
+    </nav>
+  </aside>
+  <main id="contenido"></main>
+</div>
+<dialog id="dialogo"></dialog>
+<div id="aviso" role="status" hidden></div>
+<button id="pastilla" class="boton" data-accion="ir" data-vista="enfoque" hidden></button>
+
+<script src="configuracion.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="sincronizacion.js"></script>
+<script src="copias.js"></script>
+<script src="horario.js"></script>
+<script src="filtros.js"></script>
+<script src="presentacion.js"></script>
+<script src="enfoque.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
